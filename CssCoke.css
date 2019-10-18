@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    background-color: #EFC3E6;
+}
+
+.base-line {
+    margin: 30px 15px 30px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.container {
+    width: 960px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F0E6EF;
+    align-content: flex-start;
+    padding: 10px;
+}
+
+/* banner */
+
+.banner {
+    height: 500px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-left: 20em;
+    background: 
+    linear-gradient(115deg, #b8bedd, #9c89b8, #9c89b8 50%, transparent 50%),
+    url(https://picsum.photos/1200/500) right;
+    background-repeat: no-repeat;
+}
+
+.banner h1 {
+    font-size: 60px;
+    width: 30%;
+}
+
+.banner h3 {
+    border-top: 1px solid black;
+    font-size: 20px;
+    width: 25%;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+/* nav-bar */
+
+.nav-bar {
+    background-color: #b8bedd;
+}
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+}
+.nav-bar li {
+    list-style: none;
+    min-width: 7%;
+    text-align: center;
+    padding: 0 5px 0 5px;
+    border-bottom: #b8bedd solid 5px;
+}
+.nav-bar li:hover{
+    /* background-color: #9c89b8; */
+    border-bottom: #8f71bb solid 5px;
+}
+
+.nav-bar a {
+    line-height: 50px;
+    font-size: 20px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
+
+
+/* list */
+
+.flex-boxs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-box {
+    width: 280px;
+    min-height: 200px;
+    background-color: #F0A6CA;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-box:hover {
+    background-color: #9c89b8;
+    cursor: pointer;
+}
+
+.container-box .header {
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.container-box .header h2 {
+    padding-left: 10px;
+}
+
+.container-box .header img {
+    border-radius: 5px;
+}
+
+.container-box .body {
+    color: white;
+}
+
+
+
+/* pic-list */
+
+.pic-list {
+    display: flex;
+    padding: 0 15px 0 15px;
+}
+.pic-item {
+    position: relative;
+} 
+.pic-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+    transition: opacity .5s; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.pic-item:hover .pic-text{
+    opacity: 1;
+}
+.pic-text{
+    padding: 15px 15px 15px 15px;
+    opacity: 0;
+    height: 250px;
+}
+.pic-text h3 {
+    color: #dd0;
+}
+.pic-text p {
+    color: #cccccc;
+}
