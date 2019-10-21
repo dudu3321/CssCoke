@@ -4,6 +4,10 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+img {
+    display: block;
+}
+
 body {
     background-color: #EFC3E6;
 }
@@ -84,7 +88,7 @@ body {
 
 
 
-/* list */
+/* flex-boxs list */
 
 .flex-boxs {
     display: flex;
@@ -160,4 +164,67 @@ body {
 }
 .pic-text p {
     color: #cccccc;
+}
+
+/* name-list */
+
+.name-list {
+    display: flex;
+}
+.name-item{ 
+    margin: 0 20px 20px 20px;
+    width: 278px;
+    position: relative;
+    border: 1px solid #8f71bb;
+    transition: .3s;
+}
+
+.name-item
+.name-item img{
+    width: 100%;
+}
+.name-item .text:before{
+    content: '';
+    border-top: 40px solid transparent;
+    border-left: 139px solid #F0E6EF;
+    border-right: 139px solid #F0E6EF;
+    position: absolute;
+    top: 310px;
+    left: 0;
+    transition: .3s;
+}
+
+.name-item .text{
+    padding: 0 15px 15px 15px;
+}
+
+.name-item h3{
+    text-align: center;
+    line-height: 3em;
+    border-bottom: 1px solid #b8bedd;
+    padding-bottom: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name-item p{
+    padding-top: 10px;
+}
+
+.name-item:hover{
+    transform:translateY(-20px);
+    transition: .8s;
+    background-color: #8f71bb;
+}
+
+.name-item:hover .text::before{
+    transition: .8s;
+    border-left:139px solid #8f71bb;
+    border-right:139px solid #8f71bb;
+
+}
+
+.name-item:hover .text{
+    color: #F0E6EF;
 }
